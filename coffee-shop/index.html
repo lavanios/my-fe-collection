@@ -69,25 +69,76 @@
                 <li><a href="#offcanvasCart" data-bs-toggle="offcanvas"><span class="icon-cart"><span></span></span></a></li>
             </ul>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCart" data-bs-theme="dark">
+            <div class="offcanvas offcanvas-end minicart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCart" data-bs-theme="dark">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <div>
-                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+
+                    <div class="minicart-product-row">
+                        <img src="assets/img/product_1.png" alt="">
+                        <div class="minicart-product-info">
+                            <p class="product-name">Lavazza Crema E Gusto</p>
+                            <p class="product-variation">XL</p>
+                            <div class="product-qty">
+                                <input type="number" value="2" min="1"> &times; $19.99
+                            </div>
+                        </div>
+                        <a href="#" class="minicart-delete-product">
+                            <span class="icon-trash"></span>
+                        </a>
+                        <a href="#" class="minicart-update-product">
+                            ⟳
+                        </a>
                     </div>
-                    <div class="dropdown mt-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+
+                    <div class="minicart-product-row">
+                        <img src="assets/img/product_2.png" alt="">
+                        <div class="minicart-product-info">
+                            <p class="product-name">Lavazza Crema E Gusto</p>
+                            <p class="product-variation">XL</p>
+                            <div class="product-qty">
+                                <input type="number" value="12" min="1"> &times; $19.99
+                            </div>
+                        </div>
+                        <a href="#" class="minicart-delete-product">
+                            <span class="icon-trash"></span>
+                        </a>
+                        <a href="#" class="minicart-update-product">
+                            ⟳
+                        </a>
                     </div>
+
+                    <div class="minicart-product-row">
+                        <img src="assets/img/product_1.png" alt="">
+                        <div class="minicart-product-info">
+                            <p class="product-name">Lavazza Crema E Gusto</p>
+                            <p class="product-variation">XL</p>
+                            <div class="product-qty">
+                                <input type="number" value="2" min="1"> &times; $19.99
+                            </div>
+                        </div>
+                        <a href="#" class="minicart-delete-product">
+                            <span class="icon-trash"></span>
+                        </a>
+                        <a href="#" class="minicart-update-product">
+                            ⟳
+                        </a>
+                    </div>
+
+                    <hr>
+                    <div class="minicart-total-price">
+                        <h5>Total Price: $178.98</h5>
+                        <button class="btn btn-outline-secondary">Update cart</button>
+                    </div>
+                    <hr>
+
+                    <div class="minicart-btn">
+                        <a href="" class="btn btn-outline-secondary">cart</a>
+                        <a href="" class="btn btn-warning">checkout</a>
+                    </div>
+
                 </div>
             </div>
 
