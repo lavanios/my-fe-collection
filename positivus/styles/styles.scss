@@ -1,10 +1,22 @@
 @import 'normalize',
-        'rem-function',
-        'variables',
-        'media',
-        'mixins',
-        'utils',
         'fonts',
+        'mixins',
+        'rem-function',
+        'media',
+        'variables',
+        'utils',
         'globals';
 
-@import 'blocks/header';
+@import
+    'blocks/button',
+    'blocks/grid',
+    'blocks/_burger-button',
+    'blocks/mobile-overlay',
+    'blocks/cross-button',
+    'blocks/section',
+    'blocks/hero',
+    'blocks/puddle-bg',
+    'blocks/services',
+    'blocks/services-card',
+    'blocks/banner',
+    'blocks/header';

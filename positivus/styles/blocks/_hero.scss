@@ -1,0 +1,117 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--section-padding-y);
+
+    @include desktop {
+        row-gap: rem(60);
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        column-gap: rem(30);
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        max-width: rem(531);
+        row-gap: rem(35);
+
+        @include mobile {
+            display: contents;
+        }
+    }
+
+    &__title {
+        @include mobile {
+            order: -2;
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__description {
+        font-size: rem(20);
+        line-height: rem(28);
+
+        @include mobile {
+            margin-bottom: rem(40);
+        }
+
+    }
+
+    &__button {
+        @include mobile {
+            margin-bottom: rem(60);
+            width: 100%;
+            max-width: rem(390);
+            margin-inline: auto;
+        }
+    }
+
+    &__partners {
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            column-gap: rem(37);
+
+            
+            @include tablet {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                row-gap: rem(20);
+            }
+
+            @include mobile-s {
+                column-gap: 0;
+                --heroPartnersWidthOffsetX: 60px;
+                width: calc(100vw + var(--heroPartnersWidthOffsetX) * 2);
+                margin-left: calc(
+                    (var(--heroPartnersWidthOffsetX) + var(--container-padding-x)) * -1
+                    );
+            }
+        }
+
+        &-item {
+            @include tablet {
+                display: flex;
+                justify-content: center;
+            }
+
+            @include mobile-s {
+                justify-content: start;
+
+                &:nth-child(-n + 3) {
+                    justify-content: end;
+                }
+            }
+
+        }
+
+        &-img {
+            filter: grayscale(1);
+        }
+    }
+
+    &__image {
+        @include tablet {
+            max-width: 40%;
+            height: auto;
+        }
+
+        @include mobile {
+            order: -1;
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: rem(20);
+        }
+    }
+}
+
