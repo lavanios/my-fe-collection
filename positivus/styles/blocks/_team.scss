@@ -1,0 +1,14 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(40);
+
+    &__button {
+        align-self: end;
+        min-width: rem(269);
+
+        @include mobile-s {
+            width: 100%;
+        }
+    }
+}

@@ -248,19 +248,19 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-h1 {
+h1, .h1 {
   font-size: clamp(43px, 4.1666666667vw, 60px);
 }
 
-h2 {
+h2, .h2 {
   font-size: clamp(36px, 2.7777777778vw, 40px);
 }
 
-h3 {
+h3, .h3 {
   font-size: clamp(26px, 2.0833333333vw, 30px);
 }
 
-h4 {
+h4, .h4 {
   font-size: clamp(18px, 1.3888888889vw, 20px);
 }
 
@@ -339,6 +339,16 @@ h4 {
 }
 @media (max-width: 63.9375rem) {
   .grid--2 {
+    --gridColumns: 1;
+  }
+}
+@media (max-width: 80rem) {
+  .grid--3 {
+    --gridColumns: 2;
+  }
+}
+@media (max-width: 47.9375rem) {
+  .grid--3 {
     --gridColumns: 1;
   }
 }
@@ -980,6 +990,77 @@ h4 {
   background-color: var(--color-accent);
   --indicatorVerticalRotate: 0deg;
   transition: transform 0.7s ease-out;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.team__button {
+  align-self: end;
+  min-width: 16.8125rem;
+}
+@media (max-width: 30rem) {
+  .team__button {
+    width: 100%;
+  }
+}
+
+.team-card {
+  height: 100%;
+  padding: 2.5rem 2.1875rem;
+  border: var(--border);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow);
+}
+@media (max-width: 47.9375rem) {
+  .team-card {
+    padding-inline: 3.125rem;
+  }
+}
+.team-card__header {
+  display: flex;
+}
+.team-card__item {
+  min-width: 24.1875rem;
+}
+.team-card__image:not(:last-child) {
+  margin-right: 1.25rem;
+}
+.team-card__info {
+  align-self: end;
+}
+.team-card__info:not(:last-child) {
+  margin-right: 0.625rem;
+}
+.team-card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.125rem;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  margin-left: 1px;
+  align-self: start;
+  margin-left: auto;
+  color: var(--color-accent);
+  background-color: var(--color-dark);
+  border-radius: 50%;
+}
+.team-card__name:not(:last-child) {
+  margin-bottom: 0.1875rem;
+}
+.team-card__body {
+  --teamCardMarginTop: rem(28);
+  border-top: var(--border);
+  padding-top: 1.75rem;
+  margin-top: 1.75rem;
+}
+@media (max-width: 47.9375rem) {
+  .team-card__body {
+    --teamCardMarginTop: rem(20);
+  }
 }
 
 .header {

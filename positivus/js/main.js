@@ -1,3 +1,25 @@
+
+//owl carousel
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items:1,
+        margin:10,
+        nav: true,
+        dots: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            500:{
+                items:2
+            },
+            700:{
+                items:3
+            }
+        }
+    });
+});
+
 const items = document.querySelectorAll('.process__accordion');
 
 function iniAccordions () {
