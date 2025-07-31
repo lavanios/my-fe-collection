@@ -1,24 +1,42 @@
 
 //owl carousel
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    const $slider = $(".reviews__slider").owlCarousel({
         items:1,
-        margin:10,
-        nav: true,
-        dots: true,
+        loop: false,
+        dots: false,
+        nav: false,
+        margin: 20,
         responsive:{
             0:{
                 items:1
             },
-            500:{
+            768:{
                 items:2
-            },
-            700:{
-                items:3
             }
         }
     });
+
+    const $prevBtn = $('.reviews__actions .reviews__arrow-button').first();
+    const $nextBtn = $('.reviews__actions .reviews__arrow-button').last();
+    const $dots    = $('.reviews__pagination-item button');
+
+    $prevBtn.on('click', () => $slider.trigger('prev.owl.carousel'));
+    $nextBtn.on('click', () => $slider.trigger('next.owl.carousel'));
+
+    $dots.each((i,btn) => {
+        $(btn).on('click', () =>
+            $slider.trigger('to.owl.carousel', [i,300])
+        );
+    });
+
+    $slider.on('changed.owl.carousel', (e) => {
+        const idx = e.item.index;
+        $dots.removeClass('is-current').eq(idx).addClass('is-current');
+    });
+    
 });
+
 
 const items = document.querySelectorAll('.process__accordion');
 
