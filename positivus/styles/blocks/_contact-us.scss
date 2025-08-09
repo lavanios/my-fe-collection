@@ -1,0 +1,81 @@
+.contact-us {
+    position: relative;
+    overflow-x: hidden;
+
+
+    // @include mobile {
+    //     padding: rem(40) rem(30);
+    // }
+
+    @include mobile-above {
+        padding: rem(60) rem(100) rem(80);
+        background-color: var(--color-gray);
+        border-radius: var(--border-radius-large);
+    }
+
+
+    &::after {
+        --contactUsImageOffsetY: 62px;
+
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 100%;
+        translate: -50% -50%;
+        height: calc(100% - var(--contactUsImageOffsetY) * 2);
+        aspect-ratio: 1;
+        background: url("../images/contact-us-bg.svg") center/contain no-repeat;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+
+    &__form,&__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form {
+        @include tablet-above {
+            max-width: rem(556);
+        }
+
+        @include mobile-above {
+            row-gap: rem(40);
+        }
+    }
+
+    &__request-types, &__body {
+        @include mobile {
+            background-color: var(--color-gray);
+        }
+    }
+
+    &__request-types {
+        @include mobile {
+            padding: rem(40) rem(52) rem(36);
+            border-radius: 
+                var(--border-radius-large) 
+                var(--border-radius-large)
+                0
+                0;
+        }
+    }
+
+    &__body {
+        row-gap: rem(25);
+
+        @include mobile {
+            row-gap: rem(20);
+            padding: rem(10) rem(30) rem(50);
+            border-radius: 
+                0
+                0
+                var(--border-radius-large) 
+                var(--border-radius-large);
+            margin-bottom: rem(30);
+        }
+    }
+}

@@ -26,6 +26,13 @@
             clip-path: polygon(100% 0, 0% 100%, 100% 100%);
             translate: 0 -50%;
         }
+
+        @include tablet {
+            padding: rem(24) var(--reviewCardCornerWidth) rem(24);
+        }
+        @include mobile {
+            padding: rem(48) var(--reviewCardCornerWidth) rem(48);
+        }
     }
 
     &__footer {

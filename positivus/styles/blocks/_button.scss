@@ -19,4 +19,8 @@
         color: var(--color-dark);
         background-color: transparent;
     }
+
+    &--accent {
+        background-color: var(--color-accent);
+    }
 }

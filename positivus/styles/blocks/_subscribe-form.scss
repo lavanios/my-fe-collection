@@ -1,0 +1,27 @@
+.subscribe-form {
+    padding: rem(58) rem(40);
+    background-color: var(--color-dark-alt);
+    border-radius: var(--border-radius);
+    display: flex;
+    column-gap: rem(20);
+
+    @include desktop {
+        flex-direction: column;
+        row-gap: rem(22);
+    }
+
+    @include mobile {
+        padding: rem(30);
+    }
+
+
+    &__button {
+        color: var(--color-dark);
+        transition: all 0.3s ease;
+        @include hover {
+            background-color: var(--color-dark);
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+    }
+}
