@@ -1,0 +1,146 @@
+.button {
+  display: inline-block;
+  background-color: $orange;
+  border-radius: rem(30);
+  padding: rem(10) rem(20);
+  min-width: rem(100);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
+  border: rem(1) solid transparent;
+  @include noselect();
+
+  &,
+  span {
+    color: #fff;
+  }
+
+  i,
+  span,
+  path,
+  svg {
+    transition: all $duration ease-in-out;
+  }
+
+  &:hover {
+    background-color: darken($orange, 8%);
+  }
+
+  &:active {
+    background-color: darken($orange, 12%);
+    transform: translateY(rem(1));
+  }
+
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(32);
+    height: rem(32);
+    min-width: rem(32);
+    padding: 0;
+    border-width: rem(2);
+  }
+
+  &--black {
+    background-color: $black;
+
+    &:hover,
+    &:active {
+      background-color: lighten($color: $black, $amount: 10);
+    }
+  }
+
+  &--outline {
+    background-color: #fff;
+    border-color: $orange;
+    &,
+    span {
+      color: $orange;
+    }
+
+    svg {
+      path {
+        fill: $orange;
+      }
+    }
+
+    &:hover {
+      background-color: $orange;
+
+      &,
+      span {
+        color: #fff;
+      }
+
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+
+    &:active {
+      background-color: darken($orange, 8%);
+    }
+  }
+
+  &__delimiter {
+    width: rem(1);
+    height: rem(25);
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-left: rem(14);
+    margin-right: rem(14);
+  }
+
+  &--add {
+    svg {
+      margin-right: rem(2);
+    }
+
+    span {
+      font-weight: 600;
+      font-size: rem(16);
+    }
+
+    &:hover {
+      i {
+        background-color: #fff;
+        color: $orange;
+      }
+    }
+
+    i {
+      display: inline-block;
+      border-radius: rem(30);
+      background-color: $orange;
+      color: #fff;
+      font-weight: 600;
+      width: rem(22);
+      height: rem(22);
+      font-style: normal;
+      font-size: rem(13);
+      line-height: rem(22);
+      position: relative;
+      top: rem(-1);
+      left: rem(3);
+    }
+  }
+
+  &--cart {
+    display: flex;
+    align-items: center;
+    line-height: rem(23);
+    padding: rem(12) rem(25);
+
+    svg {
+      margin-right: rem(8);
+      margin-bottom: rem(1);
+    }
+
+    span {
+      font-weight: 600;
+      font-size: rem(16);
+    }
+  }
+}

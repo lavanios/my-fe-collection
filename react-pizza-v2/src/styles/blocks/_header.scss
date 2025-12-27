@@ -1,0 +1,30 @@
+.header {
+  border-bottom: rem(1) solid $gray-line;
+  padding: rem(40) 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+
+    img {
+      margin-right: rem(15);
+    }
+
+    h1 {
+      color: #181818;
+      font-size: rem(24);
+      letter-spacing: 1%;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    p {
+      color: #7b7b7b;
+    }
+  }
+}

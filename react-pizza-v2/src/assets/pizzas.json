@@ -1,0 +1,165 @@
+[
+    {
+        "id": 0,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/p/i/pizza_with_persimmon_and_truffle.webp",
+        "title": "Піца з хурмою та трюфелем",
+        "types": [
+            0,
+            1
+        ],
+        "sizes": [
+            26,
+            30,
+            40
+        ],
+        "price": 269,
+        "category": 0,
+        "rating": 4
+    },
+    {
+        "id": 1,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/g/r/greek_pizza.webp",
+        "title": "Піца Грецька",
+        "types": [
+            0
+        ],
+        "sizes": [
+            26,
+            40
+        ],
+        "price": 239,
+        "category": 0,
+        "rating": 6
+    },
+    {
+        "id": 2,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/p/i/pizza_tom_yam_new_pizza.webp",
+        "title": "Піца том-ям",
+        "types": [
+            0
+        ],
+        "sizes": [
+            26,
+            40
+        ],
+        "price": 295,
+        "category": 1,
+        "rating": 4
+    },
+    {
+        "id": 3,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/p/i/pizza_4_flavors_updated.webp",
+        "title": "Піца 4 смаки",
+        "types": [
+            1
+        ],
+        "sizes": [
+            26,
+            30,
+            40
+        ],
+        "price": 899,
+        "category": 2,
+        "rating": 2
+    },
+    {
+        "id": 4,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/p/a/party_combo_super_mix_updated_photo.webp",
+        "title": "Party-комбо Супер мікс",
+        "types": [
+            0,
+            1
+        ],
+        "sizes": [
+            26,
+            30,
+            40
+        ],
+        "price": 699,
+        "category": 3,
+        "rating": 8
+    },
+    {
+        "id": 5,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/4/_/4_meat_pizza_updated.webp",
+        "title": "Піца 4 м'яса",
+        "types": [
+            0
+        ],
+        "sizes": [
+            30,
+            40
+        ],
+        "price": 300,
+        "category": 2,
+        "rating": 2
+    },
+    {
+        "id": 6,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/p/e/pepperoni.webp",
+        "title": "Пепперони",
+        "types": [
+            0,
+            1
+        ],
+        "sizes": [
+            26,
+            30,
+            40
+        ],
+        "price": 300,
+        "category": 1,
+        "rating": 9
+    },
+    {
+        "id": 7,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/w/i/with_shrimp_and_chicken.webp",
+        "title": "Піца з креветкою та курячим філе",
+        "types": [
+            0,
+            1
+        ],
+        "sizes": [
+            26,
+            30,
+            40
+        ],
+        "price": 309,
+        "category": 4,
+        "rating": 10
+    },
+    {
+        "id": 8,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/p/i/pizza_cheese_mix_1.webp",
+        "title": "Піца Сирний мікс",
+        "types": [
+            0,
+            1
+        ],
+        "sizes": [
+            26,
+            30,
+            40
+        ],
+        "price": 259,
+        "category": 5,
+        "rating": 10
+    },
+    {
+        "id": 9,
+        "imageUrl": "https://yapiko.ua/media/catalog/product/cache/90c631851bfc82ed3538a672fa9488bb/p/i/pizza_with_shrimp_and_pineapple.webp",
+        "title": "Піца з креветками та ананасами",
+        "types": [
+            0,
+            1
+        ],
+        "sizes": [
+            26,
+            30,
+            40
+        ],
+        "price": 299,
+        "category": 5,
+        "rating": 7
+    }
+]

@@ -1,0 +1,11 @@
+@import "_fonts.scss",
+        "_mixins.scss",
+        "_variables.scss",
+        "_normalize.scss";
+
+//blocks
+@import "blocks/_button.scss",
+        "blocks/_categories.scss",
+        "blocks/_header.scss",
+        "blocks/_pizza-block.scss",
+        "blocks/_sort.scss";
