@@ -1,8 +1,9 @@
 import React from 'react';
+import ListItem from './ListItem';
 
 
 function Categories() {
-    const [activeIdex, setActiveIndex] = React.useState(0);
+    const [activeIndex, setActiveIndex] = React.useState(0);
 
     const categories = [
         "Все",
@@ -18,11 +19,12 @@ function Categories() {
             <ul>
                 {categories.map((name,index)  => 
                 (
-                    <li
-                        key={index}
+                    <ListItem 
+                        key={name}
+                        name={name}
+                        isActive={activeIndex === index}
                         onClick={() => setActiveIndex(index)}
-                        className={activeIdex === index ? 'active' : ''}>{name}
-                    </li>
+                    />
                 ))}
 
             </ul>
