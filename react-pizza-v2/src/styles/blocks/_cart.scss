@@ -1,0 +1,367 @@
+.cart {
+
+  padding: 0.5rem .5rem 3rem .5rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content__title {
+    display: flex;
+    align-items: center;
+    font-size: rem(32);
+
+    @include mobile {
+      font-size: rem(20);
+    }
+
+    svg {
+      position: relative;
+      top: rem(-2);
+      width: rem(30);
+      height: rem(30);
+      margin-right: rem(10);
+
+      path {
+        stroke: $black;
+        stroke-width: 1.9;
+      }
+    }
+  }
+
+  .content__items {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+  }
+
+  &__clear {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    @include noselect();
+
+    span {
+      display: inline-block;
+      margin-left: rem(7);
+      color: #b6b6b6;
+      font-size: rem(18);
+
+      @include mobile {
+        margin-left: rem(4);
+      }
+    }
+
+    span,
+    svg,
+    path {
+      transition: all $duration ease-in-out;
+    }
+
+    &:hover {
+      svg {
+        path {
+          stroke: darken($color: #b6b6b6, $amount: 50);
+        }
+      }
+
+      span {
+        color: darken($color: #b6b6b6, $amount: 50);
+      }
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: rem(200) 1fr auto;
+    grid-template-rows: auto auto;
+    gap: rem(10);
+    width: 100%;
+    border-top: rem(1) solid $gray-line;
+
+    &:first-child {
+      margin-top: rem(50);
+    }
+
+    @include mobile {
+      grid-template-columns: rem(120) 1fr auto;
+    }
+
+    &-img {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: rem(180);
+        height: rem(180);
+        border-radius: rem(8);
+
+        @include mobile {
+          width: rem(100);
+          height: rem(120);
+        }
+      }
+    }
+
+    &-info {
+      grid-column: 2;
+      grid-row: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: rem(5);
+
+      h3 {
+        font-weight: bold;
+        font-size: rem(22);
+        line-height: rem(27);
+        letter-spacing: 0.01em;
+        
+        @include mobile {
+          overflow-x: auto;
+          max-width: rem(120);
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+          font-size: rem(18);
+        }
+      }
+
+      p {
+        font-size: rem(18);
+        color: #8d8d8d;
+
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &-remove {
+      grid-column: 3;
+      grid-row: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+
+      .button {
+        border-color: darken($color: $gray-line, $amount: 10);
+      }
+
+      svg {
+        transform: rotate(45deg);
+
+        path {
+          fill: darken($color: $gray-line, $amount: 15);
+        }
+      }
+
+      .button {
+        svg {
+          width: rem(11.5);
+          height: rem(11.5);
+          position: relative;
+        }
+
+        &:hover,
+        &:active {
+          border-color: darken($color: $gray-line, $amount: 80);
+          background-color: darken($color: $gray-line, $amount: 80);
+        }
+      }
+    }
+
+    &-count {
+      grid-column: 2;
+      grid-row: 2;
+      display: flex;
+      align-items: center;
+      gap: rem(10);
+
+      @include mobile {
+        gap: rem(6);
+      }
+
+      &-minus {
+        svg {
+          path:first-of-type {
+            display: none;
+          }
+        }
+      }
+
+      b {
+        font-size: rem(22);
+
+        @include mobile {
+          font-size: rem(18);
+        }
+      }
+    }
+
+    &-price {
+      grid-column: 3;
+      grid-row: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+
+      b {
+        font-weight: bold;
+        font-size: rem(22);
+        letter-spacing: 0.01em;
+
+        @include mobile {
+          font-size: rem(18);
+          text-align: end;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: rem(50);
+
+    &-details {
+      display: flex;
+      justify-content: space-between;
+
+      @include mobile-s {
+        @include flex-center;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      span {
+        font-size: rem(22);
+
+        &:last-of-type {
+          b {
+            color: $orange;
+          }
+        }
+
+        @include mobile {
+          font-size: rem(18);
+        }
+        @include mobile-s {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: rem(40);
+      white-space: nowrap;
+
+      @include mobile-s {
+        @include flex-center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        gap: rem(12);
+      }
+
+      .go-back-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(210);
+
+        border-color: darken($color: $gray-line, $amount: 10);
+
+        @include mobile-s {
+          width: 100%;
+        }
+
+        span {
+          color: darken($color: $gray-line, $amount: 20);
+          font-weight: 500;
+          font-weight: 600;
+        }
+
+        &:hover {
+          background-color: darken($color: $gray-line, $amount: 90);
+          border-color: darken($color: $gray-line, $amount: 90);
+
+          span {
+            color: $gray-line;
+          }
+        }
+
+        svg {
+          margin-right: rem(12);
+
+          path {
+            fill: transparent;
+            stroke-width: 2;
+          }
+        }
+      }
+
+      .pay-btn {
+        font-size: rem(16);
+        font-weight: 600;
+        width: rem(210);
+        padding: 1rem;
+
+        @include mobile {
+          width: rem(160);
+          padding: rem(8);
+        }
+        @include mobile-s {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
+  &--empty {
+    margin: 0 auto;
+    width: rem(560);
+    text-align: center;
+
+    h2 {
+      font-size: rem(32);
+      margin-bottom: rem(10);
+    }
+
+    p {
+      font-size: rem(18);
+      line-height: 145.4%;
+      letter-spacing: 0.01em;
+      color: #777777;
+    }
+
+    icon {
+      position: relative;
+      top: rem(2);
+    }
+
+    img {
+      display: block;
+      width: rem(300);
+      margin: rem(45) auto rem(60);
+    }
+
+    .button--black {
+      padding: rem(12) 0 rem(14);
+      width: rem(230);
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: rem(18);
+    }
+  }
+}

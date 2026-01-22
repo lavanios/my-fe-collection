@@ -1,19 +1,38 @@
 .categories {
-  ul {
+
+  &__list {
     display: flex;
+    flex-wrap: wrap;
+
+    @include mobile-s {
+      display: grid;
+      grid-template-columns: repeat(2,2fr);
+    }
 
     li {
-      background-color: #f9f9f9;
+      background-color: rgba(218, 214, 214, 0.5921568627);
       padding: rem(13) rem(30);
       border-radius: rem(30);
       margin-right: rem(10);
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.1s ease-in-out;
+      margin-top: rem(30);
+      text-align: center;
+
       @include noselect();
 
-      &:hover {
-        background-color: darken(#f9f9f9, 2%);
+
+      @include mobile {
+        margin-top: rem(12);
+        padding: rem(13) rem(20);
+      }
+
+      &:hover,
+      &:focus {
+        background-color: #282828;
+        color: bisque;
+        transition: color, background-color .3s ease-in-out;
       }
 
       &:active {
@@ -26,4 +45,5 @@
       }
     }
   }
+
 }

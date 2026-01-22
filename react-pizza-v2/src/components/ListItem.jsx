@@ -1,12 +1,10 @@
 import React from 'react'
 
-function ListItem({ name, isActive, onClick }) {
+export function ListItem({ name, isActive, onClick, className = '' }) {
     return (
         <li
             onClick={onClick}
-            className={isActive ? 'active' : ''}
+            className={`${className} ${isActive ? 'active' : ''}`.trim() || undefined}
         >{name}</li>
     )
 }
-
-export default ListItem;

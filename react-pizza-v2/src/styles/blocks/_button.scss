@@ -1,5 +1,5 @@
 .button {
-  display: inline-block;
+  display: flex;
   background-color: $orange;
   border-radius: rem(30);
   padding: rem(10) rem(20);
@@ -8,7 +8,17 @@
   cursor: pointer;
   transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
   border: rem(1) solid transparent;
+  justify-content: center;
+  align-items: center;
   @include noselect();
+
+  @include desktop {
+    padding: rem(10);
+  }
+
+  @include mobile {
+    padding: rem(8);
+  }
 
   &,
   span {
@@ -23,7 +33,7 @@
   }
 
   &:hover {
-    background-color: darken($orange, 8%);
+    background-color: darken($orange, 20%);
   }
 
   &:active {
@@ -54,6 +64,7 @@
   &--outline {
     background-color: #fff;
     border-color: $orange;
+
     &,
     span {
       color: $orange;
@@ -89,8 +100,8 @@
     width: rem(1);
     height: rem(25);
     background-color: rgba(255, 255, 255, 0.25);
-    margin-left: rem(14);
-    margin-right: rem(14);
+    margin-left: rem(8);
+    margin-right: rem(8);
   }
 
   &--add {
@@ -136,11 +147,30 @@
     svg {
       margin-right: rem(8);
       margin-bottom: rem(1);
+
     }
 
     span {
       font-weight: 600;
       font-size: rem(16);
+    }
+
+    @include mobile {
+      padding: .6rem 1rem;
+
+      svg {
+        margin-right: rem(4);
+        margin-bottom: rem(1);
+      }
+
+      span {
+        font-weight: 600;
+        font-size: rem(12);
+      }
+    }
+
+    @include mobile-s {
+      padding: rem(10);
     }
   }
 }

@@ -1,11 +1,12 @@
 .header {
   border-bottom: rem(1) solid $gray-line;
-  padding: rem(40) 0;
+  padding: rem(40) 1rem;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
   }
 
   &__logo {
@@ -13,18 +14,34 @@
 
     img {
       margin-right: rem(15);
+
+      @include mobile {
+        margin-right: rem(8);
+      }
     }
 
-    h1 {
+    &-title {
       color: #181818;
       font-size: rem(24);
       letter-spacing: 1%;
       text-transform: uppercase;
       font-weight: 800;
+      
+      @include mobile-s {
+        text-align: center;
+        font-size: rem(16);
+      }
     }
 
-    p {
+    &-description {
       color: #7b7b7b;
+
+      @include mobile {
+        &--hidden {
+          display: none;
+        }
+      }
     }
   }
+
 }

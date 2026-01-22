@@ -1,0 +1,10 @@
+@import "../../styles/mixins";
+
+.root {
+  text-align: center;
+  padding: rem(180);
+
+  span {
+    font-size: rem(78);
+  }
+}

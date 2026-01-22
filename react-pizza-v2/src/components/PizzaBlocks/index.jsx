@@ -1,5 +1,5 @@
 import React from 'react';
-import ListItem from '../ListItem';
+import {ListItem} from '../ListItem';
 
 function PizzaBlock({ title, price, imageUrl, sizes, types }) {
     const [activeType, setActiveType] = React.useState(0);
@@ -37,7 +37,7 @@ function PizzaBlock({ title, price, imageUrl, sizes, types }) {
                 </ul>
             </div>
             <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от {price} грн</div>
+                <div className="pizza-block__price">{price} грн</div>
                 <button className="button button--outline button--add">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path

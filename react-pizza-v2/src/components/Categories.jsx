@@ -1,5 +1,5 @@
 import React from 'react';
-import ListItem from './ListItem';
+import {ListItem} from './ListItem';
 
 
 function Categories() {
@@ -16,7 +16,7 @@ function Categories() {
 
     return (
         <div className="categories">
-            <ul>
+            <ul className='categories__list'>
                 {categories.map((name,index)  => 
                 (
                     <ListItem 
@@ -26,7 +26,6 @@ function Categories() {
                         onClick={() => setActiveIndex(index)}
                     />
                 ))}
-
             </ul>
         </div>
     );
