@@ -1,124 +1,117 @@
-# My Frontend Portfolio
+# Frontend Portfolio
 
-Коллекция моих учебных и pet-проектов по фронтенд-разработке.
-Здесь я практикую вёрстку, адаптив, работу с JavaScript и React.
+A collection of my frontend study projects and personal experiments.
+This repository is where I practice HTML, CSS, responsive layouts, JavaScript, and React.
 
-## О себе
+## About Me
 
-Я frontend-разработчик в процессе активного роста.
-Фокус: чистая вёрстка, удобные интерфейсы и аккуратная структура кода.
+I’m a frontend developer who is actively growing my skill set.
+My focus is clean markup, usable interfaces, and maintainable code structure.
 
-## Проекты
+## Projects
 
 ### 1) Coffee Shop
-Небольшой интернет-магазин кофе с классическими страницами: главная, товар, корзина.
+A small coffee e-commerce concept with classic pages: home, product, and cart.
 
-- Главная: [coffee-shop/index.html](coffee-shop/index.html)
-- Товар: [coffee-shop/product.html](coffee-shop/product.html)
-- Корзина: [coffee-shop/cart.html](coffee-shop/cart.html)
-- Стили: [coffee-shop/assets/css/main.css](coffee-shop/assets/css/main.css)
-- Скрипты: [coffee-shop/assets/js/main.js](coffee-shop/assets/js/main.js)
+- Home: [coffee-shop/index.html](coffee-shop/index.html)
+- Product: [coffee-shop/product.html](coffee-shop/product.html)
+- Cart: [coffee-shop/cart.html](coffee-shop/cart.html)
+- Styles: [coffee-shop/assets/css/main.css](coffee-shop/assets/css/main.css)
+- Scripts: [coffee-shop/assets/js/main.js](coffee-shop/assets/js/main.js)
 
-**Что отрабатывал:**
-HTML-структуру, CSS-компоненты, базовую интерактивность на JavaScript.
+What I practiced: HTML structure, CSS components, and basic JavaScript interactivity.
 
 ### 2) E-shop
-Более крупный макет интернет-магазина: каталог, карточка товара, авторизация, checkout и доставка.
+A larger e-commerce layout with catalog, product page, auth, checkout, and delivery screens.
 
-- Главная: [E-shop/index.html](E-shop/index.html)
-- Категория: [E-shop/category.html](E-shop/category.html)
-- Товар: [E-shop/product.html](E-shop/product.html)
-- Корзина: [E-shop/cart.html](E-shop/cart.html)
-- Оформление: [E-shop/checkout.html](E-shop/checkout.html)
-- Доставка: [E-shop/delivery.html](E-shop/delivery.html)
-- Вход: [E-shop/login.html](E-shop/login.html)
-- Регистрация: [E-shop/register.html](E-shop/register.html)
-- Стили: [E-shop/assets/css/style.css](E-shop/assets/css/style.css)
-- Скрипты: [E-shop/assets/js/main.js](E-shop/assets/js/main.js)
+- Home: [E-shop/index.html](E-shop/index.html)
+- Category: [E-shop/category.html](E-shop/category.html)
+- Product: [E-shop/product.html](E-shop/product.html)
+- Cart: [E-shop/cart.html](E-shop/cart.html)
+- Checkout: [E-shop/checkout.html](E-shop/checkout.html)
+- Delivery: [E-shop/delivery.html](E-shop/delivery.html)
+- Login: [E-shop/login.html](E-shop/login.html)
+- Register: [E-shop/register.html](E-shop/register.html)
+- Styles: [E-shop/assets/css/style.css](E-shop/assets/css/style.css)
+- Scripts: [E-shop/assets/js/main.js](E-shop/assets/js/main.js)
 
-**Что отрабатывал:**
-Многостраничную структуру, компонентный подход к секциям, работу с UI-библиотеками (например, Owl Carousel).
+What I practiced: multi-page structure, reusable section patterns, and working with UI libraries such as Owl Carousel.
 
 ### 3) Odigo
-Лендинг с акцентом на адаптив и визуальную подачу.
+A landing page focused on responsiveness and visual presentation.
 
-- Главная: [odigo/index.html](odigo/index.html)
-- Стили: [odigo/css/style.css](odigo/css/style.css)
-- Медиа-правила: [odigo/css/media.css](odigo/css/media.css)
-- Скрипты: [odigo/js/main.js](odigo/js/main.js)
+- Home: [odigo/index.html](odigo/index.html)
+- Styles: [odigo/css/style.css](odigo/css/style.css)
+- Media queries: [odigo/css/media.css](odigo/css/media.css)
+- Scripts: [odigo/js/main.js](odigo/js/main.js)
 
-**Что отрабатывал:**
-Адаптивную верстку, работу с сеткой и типографику.
+What I practiced: responsive layout, grid usage, and typography.
 
 ### 4) Positivus
-Лендинг с модульной SCSS-архитектурой и набором UI-блоков.
+A landing page with a modular SCSS architecture and a reusable UI block system.
 
-- Главная: [positivus/index.html](positivus/index.html)
-- Точка входа SCSS: [positivus/styles/styles.scss](positivus/styles/styles.scss)
-- Готовый CSS: [positivus/styles/styles.css](positivus/styles/styles.css)
-- Скрипты: [positivus/js/main.js](positivus/js/main.js)
+- Home: [positivus/index.html](positivus/index.html)
+- SCSS entry point: [positivus/styles/styles.scss](positivus/styles/styles.scss)
+- Compiled CSS: [positivus/styles/styles.css](positivus/styles/styles.css)
+- Scripts: [positivus/js/main.js](positivus/js/main.js)
 
-**Что отрабатывал:**
-SCSS-архитектуру (partials, variables, mixins), повторно используемые блоки и аккуратную организацию проекта.
+What I practiced: SCSS architecture, reusable blocks, and clean project organization.
 
 ### 5) React Pizza v2
-SPA-приложение на React с каталогом и базовой навигацией.
+A React SPA with a product catalog and basic navigation.
 
-- Код приложения: [react-pizza-v2/src](react-pizza-v2/src)
-- Точка входа: [react-pizza-v2/src/index.js](react-pizza-v2/src/index.js)
-- Главный компонент: [react-pizza-v2/src/App.jsx](react-pizza-v2/src/App.jsx)
-- Компоненты: [react-pizza-v2/src/components](react-pizza-v2/src/components)
+- App code: [react-pizza-v2/src](react-pizza-v2/src)
+- Entry point: [react-pizza-v2/src/index.js](react-pizza-v2/src/index.js)
+- Main component: [react-pizza-v2/src/App.jsx](react-pizza-v2/src/App.jsx)
+- Components: [react-pizza-v2/src/components](react-pizza-v2/src/components)
 
-**Что отрабатывал:**
-React-компоненты, роутинг, состояние UI и организацию проекта в стиле SPA.
+What I practiced: React components, routing, UI state, and SPA project structure.
 
-## Технологии
+## Tech Stack
 
 - HTML5
 - CSS3 / SCSS
 - JavaScript (ES6+)
 - React
-- Адаптивная верстка (mobile-first)
+- Responsive design
 - Git / GitHub
 
-## Как запустить локально
+## Run Locally
 
-### Статические проекты
+### Static projects
 
-Откройте любой HTML-файл напрямую в браузере или используйте Live Server.
+Open any HTML file directly in the browser or use Live Server.
 
-Примеры:
+Examples:
 
 - [coffee-shop/index.html](coffee-shop/index.html)
 - [E-shop/index.html](E-shop/index.html)
 - [odigo/index.html](odigo/index.html)
 - [positivus/index.html](positivus/index.html)
 
-### React-проект
+### React project
 
-1. Перейдите в папку проекта:
+1. Go to the project folder:
 
 ```bash
 cd react-pizza-v2
 ```
 
-2. Установите зависимости:
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-3. Запустите dev-сервер:
+3. Start the development server:
 
 ```bash
 npm start
 ```
 
-## Контакты
-
-Добавьте ваши контакты:
+## Contact
 
 - Email: lavunov.danil@gmail.com
-- Telegram: @lavanios
-- GitHub: https://github.com/lavanios
-- CV: https://lavanios.netlify.app/
+- Telegram: [@lavanios](https://t.me/lavanios)
+- GitHub: [lavanios](https://github.com/lavanios)
+- CV: [lavanios.netlify.app](https://lavanios.netlify.app/)
